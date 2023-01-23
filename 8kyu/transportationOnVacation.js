@@ -7,6 +7,8 @@ Every day you rent the car costs $40. If you rent the car for 7 or more days, yo
 
 Write a code that gives out the total amount for different days(d).
 */
+
+/*
 function rentalCarCost(d) {
   // Your solution here
   let total = d * 40;
@@ -19,3 +21,7 @@ function rentalCarCost(d) {
   }
 }
 // Needs Refactoring. We can do this in less lines of code.
+*/
+
+// REFACTORED - 01/22/22
+const rentalCarCost = d => d * 40 - ((d >= 7) ? 50 : ((d >= 3) ? 20 : 0));
