@@ -15,3 +15,5 @@ function booleanToString(b) {
     return "false";
   }
 }
+// refactored
+const booleanToString = (b) => (b == true ? true : false);
