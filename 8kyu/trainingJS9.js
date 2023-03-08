@@ -51,15 +51,16 @@ You need to write a loop statement within the function that loops n times. Each 
 
 Finally, return the padded string.
 */
-
 function padIt(str, n) {
-  while (n > 0) {
-    if (n % 2 === 0) {
-      str = str + "*";
+  let paddedStr = str,
+    num = 1;
+  while (num <= n) {
+    if (num % 2 === 0) {
+      paddedStr = paddedStr + "*";
     } else {
-      str = "*" + str;
+      paddedStr = "*" + paddedStr;
     }
-    n--;
+    num++;
   }
-  return str;
+  return paddedStr;
 }
